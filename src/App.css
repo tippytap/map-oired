@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Scope+One');
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+  text-align: center;
+    background: url('../img/wov.png') repeat;
+}
+
+#MapContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#Map img{
+    max-width: 100%;
+}
+
+#Map{
+    margin: 0 auto;
+    /*height: 100%;*/
+}
+
+#InfoPane{
+    width: 20%;
+    background: #337788;
+    box-shadow: 0px 0px 10px #1f4b56;
+}
+#InfoPane #infoBody{
+    padding: 15px;
+    text-align: left;
+    background: #85ADB8;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    border-top: 1px solid #1f4b56;
+}
+#InfoPane #infoBody p{
+    margin-top: 0;
+    margin-left: 5px;
+}
+#InfoPane h3{
+    text-align: center;
+    font-family: 'Scope One', serif;
+    color: white;
+}
+#InfoPane h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+}
+#InfoPane a{
+    color: white;
+    text-shadow: 1px 1px #1f4b56;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#InfoPane a:hover{
+    background: #afcad1;
+}
+#InfoPane a .text{
+    width: 95%;
+}
+#InfoPane a .icon{
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    /*background: orange;*/
+    display: block;
+    border-top: 5px solid transparent;
+    border-left: 5px solid orange;
+    border-bottom: 5px solid transparent;
+}
+
+#InfoPane header{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.project{
+    list-style: none;
+}
+
+.Pin{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+#PinList{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+@media (max-width: 600px){
+    body{
+        font-size: 0.75em;
+    }
+    #InfoPane{
+        clear: both;
+        width: 100%;
+        order: 2;
+    }
+    #Map{
+        order: 1;
+        height: 50px;
+    }
+    #MapContainer{
+        flex-direction: column;
+    }
+}
+
