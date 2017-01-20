@@ -18,16 +18,9 @@ class Map extends Component{
         this.state.scaleFactor = scaleFactor;
     }
 
-    setStyles(){
-        return {
-            // width: parseInt(window.innerWidth * 0.8, 10),
-            // height: parseInt(window.innerHeight, 10)
-        }
-    }
-
     render(){
         return(
-            <div id="Map" style={this.setStyles()}>
+            <div id="Map">
                 <PinList
                     width={this.state.mapWidth}
                     height={this.state.mapHeight}

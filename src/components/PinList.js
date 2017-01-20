@@ -15,16 +15,9 @@ class PinList extends Component{
         }
     }
 
-    setStyles(){
-        return {
-            // width: window.innerWidth * 0.8,
-            // height: window.innerHeight
-        }
-    }
-
     render(){
         return(
-            <ul id="PinList" style={this.setStyles()}>
+            <ul id="PinList">
                 <Pin
                     x={this.state.width * 0.73}
                     y={this.state.height * 0.35}
