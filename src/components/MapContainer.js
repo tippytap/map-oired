@@ -11,7 +11,10 @@ class MapContainer extends Component {
         super(props);
         this.state = {
             infoTitle: "Select a location",
-            projects: []
+            projects:{
+                "past": [],
+                "current": []
+            }
         };
     }
 

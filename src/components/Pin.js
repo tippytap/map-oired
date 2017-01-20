@@ -12,7 +12,9 @@ class Pin extends Component{
             x: props.x * props.scale,
             y: props.y * props.scale,
             region: props.region,
-            projects: props.projects
+            projects: {
+                "past": props.pastProjects
+            }
         }
     }
 

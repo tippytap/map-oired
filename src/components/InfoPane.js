@@ -21,24 +21,26 @@ class InfoPane extends Component{
 
     render(){
         return(
-            <div id="InfoPane">
+            <div id="InfoPane" style={{height: window.innerHeight}}>
                 <header>
                     <h3>{this.props.region}</h3>
                 </header>
                 <div id="infoBody">
-                    {this.state.projects.map(function(project, index){
-                        return(
-                            <li key={index + "_li"} className="project">
-                                <h5 key={index + "_h5"}>
-                                    <a key={index + "_a"} href={project.link} target="_blank">
-                                        <span className="text">{project.title}</span>
-                                        <span className="icon"></span>
-                                    </a>
-                                </h5>
-                                <p>{project.description}</p>
-                            </li>
-                        );
-                    })}
+                    <section>
+                        {this.state.projects.past.map(function(project, index){
+                            return(
+                                <li key={index + "_li"} className="project">
+                                    <h6 key={index + "_h5"}>
+                                        <a key={index + "_a"} href={project.link} target="_blank">
+                                            <span className="text">{project.title}</span>
+                                            <span className="icon"></span>
+                                        </a>
+                                    </h6>
+                                    <p>{project.description}</p>
+                                </li>
+                            );
+                        })}
+                    </section>
                 </div>
             </div>
         );

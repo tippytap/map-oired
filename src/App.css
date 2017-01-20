@@ -23,13 +23,16 @@
 
 #Map{
     margin: 0 auto;
-    /*height: 100%;*/
+    height: 100%;
+    width: 80%;
 }
 
 #InfoPane{
     width: 20%;
     background: #337788;
     box-shadow: 0px 0px 10px #1f4b56;
+    /*height: 100%;*/
+    overflow-y: scroll;
 }
 #InfoPane #infoBody{
     padding: 15px;
@@ -48,7 +51,7 @@
     font-family: 'Scope One', serif;
     color: white;
 }
-#InfoPane h5{
+#InfoPane h5, h6{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1em;
@@ -81,7 +84,22 @@
     border-left: 5px solid orange;
     border-bottom: 5px solid transparent;
 }
-
+#InfoPane section{
+    /*border-bottom: 1px solid black;*/
+    margin-bottom: 35px;
+}
+#InfoPane section h5{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: white;
+}
+#InfoPane section h5:first-child{
+    border-bottom: 1px solid white;
+}
+#InfoPane section:last-child{
+    border-bottom: none;
+}
 #InfoPane header{
     width: 100%;
     border-bottom: 1px solid white;
@@ -104,7 +122,7 @@
     position: absolute;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1024px){
     body{
         font-size: 0.75em;
     }
@@ -115,7 +133,9 @@
     }
     #Map{
         order: 1;
-        height: 50px;
+        margin-left: -5%;
+        /*width: 80%;*/
+        /*height: 50px;*/
     }
     #MapContainer{
         flex-direction: column;

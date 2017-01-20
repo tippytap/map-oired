@@ -14,14 +14,14 @@ class Map extends Component{
             mapWidth: 2000,
             mapHeight: 1075,
         }
-        let scaleFactor = (window.innerWidth * 0.80) / this.state.mapWidth;
+        let scaleFactor = (window.innerWidth) / this.state.mapWidth;
         this.state.scaleFactor = scaleFactor;
     }
 
     setStyles(){
         return {
-            width: parseInt(window.innerWidth * 0.8, 10),
-            height: parseInt(window.innerHeight, 10)
+            // width: parseInt(window.innerWidth * 0.8, 10),
+            // height: parseInt(window.innerHeight, 10)
         }
     }
 

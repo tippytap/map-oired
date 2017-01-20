@@ -17,8 +17,8 @@ class PinList extends Component{
 
     setStyles(){
         return {
-            width: window.innerWidth * 0.8,
-            height: window.innerHeight
+            // width: window.innerWidth * 0.8,
+            // height: window.innerHeight
         }
     }
 
@@ -31,7 +31,7 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="South Asia"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "Nepal",
                             "link": "http://www.oired.vt.edu/past-projects/Nepal.html",
@@ -56,7 +56,7 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="West Africa"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "MFSRE",
                             "link": "http://www.oired.vt.edu/past-projects/mfsre.html",
@@ -86,7 +86,7 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="East Africa"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "Peanut CRSP",
                             "link": "http://www.oired.vt.edu/past-projects/PeanutCRSP.html",
@@ -111,7 +111,7 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="Eastern Europe"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "SARA",
                             "link": "http://www.oired.vt.edu/past-projects/SARA.html",
@@ -136,7 +136,7 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="Middle East"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "EGYPT",
                             "link": "http://www.oired.vt.edu/past-projects/Egypt.html",
@@ -156,7 +156,7 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="Southeast Asia"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "IPM SECP",
                             "link": "http://www.oired.vt.edu/past-projects/SECP.html",
@@ -171,12 +171,12 @@ class PinList extends Component{
                     updateInfo={this.props.updateInfo}
                     region="Caribbean"
                     scale={this.state.scaleFactor}
-                    projects={[
+                    pastProjects={[
                         {
                             "title": "ESIH",
                             "link": "http://www.oired.vt.edu/past-projects/Haiti.html",
                             "description": "partnership with Ecole Supérieure d'Infotronique d'Haïti (ESIH) in Port-au-Prince, Haiti"
-                        },
+                        }
                     ]}
                 />
             </ul>
