@@ -14,7 +14,14 @@ class Map extends Component{
             mapWidth: 2000,
             mapHeight: 1075,
         }
-        let scaleFactor = (window.innerWidth) / this.state.mapWidth;
+
+        let scaleFactor = 0;
+
+        if(window.innerWidth >= 1024)
+            scaleFactor = (window.innerWidth * 0.8) / this.state.mapWidth;
+        else
+            scaleFactor = (window.innerWidth) / this.state.mapWidth;
+
         this.state.scaleFactor = scaleFactor;
     }
 

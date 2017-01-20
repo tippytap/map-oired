@@ -24,11 +24,11 @@
 #Map{
     margin: 0 auto;
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 #InfoPane{
-    width: 30%;
+    width: 20%;
     background: #337788;
     box-shadow: 0px 0px 10px #1f4b56;
     overflow-y: scroll;
@@ -138,6 +138,9 @@
         flex-direction: column;
         width: 100%;
         margin: 0;
+    }
+    .Pin{
+        width: 0.5em;
     }
 }
 
